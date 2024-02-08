@@ -31,7 +31,7 @@ export const AuthProvider = ({ children }) => {
   const userAuthentication = async() =>{
     try {
       setLoading(true);//for securing admin route
-      const response = await fetch("https://webback.onrender.com/api/auth/user",{
+      const response = await fetch("https://webback.onrender.com/auth/user",{
         method:"GET",
         headers: {
           Authorization :authorizationToken,
@@ -58,7 +58,7 @@ export const AuthProvider = ({ children }) => {
   // to fetch the services data from the backend
   const getServices = async()=>{
     try {
-      const response = await fetch("https://webback.onrender.com/api/data/service",{
+      const response = await fetch("https://webback.onrender.com/data/service",{
         method :"GET",
       });
 

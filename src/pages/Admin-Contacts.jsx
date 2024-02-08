@@ -7,7 +7,7 @@ export const AdminContacts = () => {
     const {authorizationToken} = useAuth();
     const getContactsData = async()=>{
         try {
-            const response = await fetch("https://webback.onrender.com/api/admin/contacts", {
+            const response = await fetch("https://webback.onrender.com/admin/contacts", {
               method: "GET",
               headers: {
                 Authorization: authorizationToken,
@@ -25,7 +25,7 @@ export const AdminContacts = () => {
     } 
     const deleteContact = async(id) =>{
         try {
-            const response = await fetch(`https://webback.onrender.com/api/admin/contacts/delete/${id}`,{
+            const response = await fetch(`https://webback.onrender.com/admin/contacts/delete/${id}`,{
                 method:"DELETE",
                 headers:{
                     Authorization:authorizationToken,

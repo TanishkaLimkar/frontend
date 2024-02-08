@@ -44,7 +44,7 @@ export const Contact = () => {
         e.preventDefault();//form ka default behaviour hota hai to refresh the page ..to avoid that do this
         console.log(contact);
         try {
-            const response = await fetch("https://webback.onrender.com/api/form/contact",{
+            const response = await fetch("https://webback.onrender.com/form/contact",{
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
