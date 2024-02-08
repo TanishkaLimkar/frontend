@@ -11,7 +11,9 @@ export const AdminContacts = () => {
               method: "GET",
               headers: {
                 Authorization: authorizationToken,
+            
               },
+              mode:'cors',
             });
       
             const data = await response.json();
@@ -30,6 +32,7 @@ export const AdminContacts = () => {
                 headers:{
                     Authorization:authorizationToken,
                 },
+                mode:'cors',
              });
              const data = await response.json();
 

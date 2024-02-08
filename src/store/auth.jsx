@@ -36,6 +36,7 @@ export const AuthProvider = ({ children }) => {
         headers: {
           Authorization :authorizationToken,
         },
+        mode:'cors',
       });
       if(response.ok)
       {
@@ -60,6 +61,7 @@ export const AuthProvider = ({ children }) => {
     try {
       const response = await fetch("https://webback.onrender.com/data/service",{
         method :"GET",
+        mode:'cors',
       });
 
       if(response.ok){

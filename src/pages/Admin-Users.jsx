@@ -15,6 +15,7 @@ export const AdminUsers = () => {
                 headers:{
                     Authorization:authorizationToken,
                 },
+                mode:'cors',
              });
 
              const data= await response.json();
@@ -33,6 +34,7 @@ export const AdminUsers = () => {
             headers:{
                 Authorization:authorizationToken,
             },
+            mode:'cors',
          });
          const data = await response.json();
          console.log(`users after delete : ${data}`);

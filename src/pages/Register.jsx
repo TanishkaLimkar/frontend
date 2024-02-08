@@ -36,6 +36,7 @@ export const Register= () => {
                 headers: {
                     "Content-Type": "application/json",
                 },
+                mode:'cors',
                 body: JSON.stringify(user),
               });
               const res_data = await response.json();//the token generated from auth-controller is received in this res_data
